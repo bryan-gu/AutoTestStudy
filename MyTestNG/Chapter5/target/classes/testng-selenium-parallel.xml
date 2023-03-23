@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel TestSuite" parallel="tests" thread-count="2">
     <test name="InternetExplorer Test">
-        <parameter name="browser" value="IE"></parameter>
+        <parameter name="browser" value="Edge"></parameter>
         <classes>
             <class name="testclasses.TestNG_SeleniumParametersParallelExample"></class>
         </classes>

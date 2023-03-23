@@ -3,8 +3,10 @@ package waittypes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -19,10 +21,9 @@ public class ImplicitWaitDemo {
 
     @BeforeClass
     public void setUp() {
-        baseURrl = "www.baidu.com";
-        System.setProperty("webdriver.ie.driver", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-        driver = new InternetExplorerDriver();
-
+        baseURrl = "https://www.baidu.com/";
+        System.setProperty("webdriver.edge.driver","D:\\My Documents\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+        driver = new EdgeDriver();
         driver.manage().window().maximize();
     }
     @Test

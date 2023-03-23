@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -21,12 +22,12 @@ public class TestNG_SeleniumParametersParallelExample {
     @BeforeClass
     @Parameters({"browser"})
     public void setUp(String browser){
-        baseURL = "www.baidu.com";
-        if (browser.equalsIgnoreCase("IE")){
-            System.setProperty("webdriver.ie.driver","C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
-            driver = new InternetExplorerDriver();
+        baseURL = "https://www.baidu.com/";
+        if (browser.equalsIgnoreCase("Edge")){
+            System.setProperty("webdriver.edge.driver","D:\\My Documents\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+            driver = new EdgeDriver();
         } else if (browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver","C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+            System.setProperty("webdriver.chrome.driver","D:\\My Documents\\Downloads\\chromedriver_win32\\chromedriver.exe");
             driver = new ChromeDriver();
         }
         //driver.manage().window().maximize();
