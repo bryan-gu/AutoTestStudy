@@ -24,14 +24,14 @@ public class ImplicitWaitDemo {
         baseURrl = "https://www.baidu.com/";
         System.setProperty("webdriver.edge.driver","D:\\My Documents\\Downloads\\edgedriver_win64\\msedgedriver.exe");
         driver = new EdgeDriver();
-        driver.manage().window().maximize();
+
     }
     @Test
     public void test(){
         driver.get(baseURrl);
         driver.findElement(By.id("kw")).sendKeys("tests");
 
-        //driver.findElement(By.id("su")).click();
+        driver.findElement(By.id("su")).click();
     }
     @AfterClass
     public void cleanUp() throws InterruptedException {
