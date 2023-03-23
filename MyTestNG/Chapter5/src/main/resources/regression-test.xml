@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Complete TestSuite">
+    <test name = "Smoke Test1">
+        <classes>
+            <class name = "regressionsuite.TestNG_TestClass1"/>
+        </classes>
+    </test>
+    <test name = "Regression Test2">
+        <classes>
+            <class name = "regressionsuite.TestNG_TestClass2"/>
+        </classes>
+    </test>
+</suite>

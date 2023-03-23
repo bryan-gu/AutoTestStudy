@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Group Test">
+    <test name = "GroupsDemo Test">
+        <groups>
+            <define name = "all">
+                <include name = "suv"></include>
+                <include name = "moto"></include>
+                <include name = "sedan"></include>
+            </define>
+            <define name = "nomoto">
+                <include name = "suv"></include>
+                <include name = "sedan"></include>
+            </define>
+            <run>
+                <include name = "nomoto"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name = "testclasses.TestNG_Grouping"/>
+        </classes>
+    </test>
+</suite>

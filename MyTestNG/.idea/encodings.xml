@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/groups/GroupsOnMethod.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/listenerspackage/CustomerListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/listenerspackage/CustomerListener2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/listenerspackage/CustomerListener3.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/regressionsuite/TestNG_TestClass1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/regressionsuite/TestNG_TestClass2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestAnnotation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_Asserts.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_BeforeClassAnnotation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_ListenerTest2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_Priority.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_SoftAsserts.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_TestClass1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/java/testclasses/TestNG_TestClass2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/main/resources/suite.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Chapter5/src/test/java/testclasses/TestNG_ReportsAndLogsTest.java" charset="UTF-8" />
+  </component>
+</project>
