@@ -23,7 +23,7 @@ public class ExplicitWaitDemo {
     @BeforeClass
     public void setUp() {
         baseURrl = "https://www.baidu.com/";
-        System.setProperty("webdriver.edge.driver","D:\\My Documents\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver","D:\\JavaStudy\\edgedriver_win64\\msedgedriver.exe");
         driver = new EdgeDriver();
 
         wt = new WaitTypes(driver);
@@ -35,8 +35,8 @@ public class ExplicitWaitDemo {
         WebElement searchTest = driver.findElement(By.id("kw"));
         searchTest.sendKeys("tests");
         driver.findElement(By.id("su")).click();
-        WebElement searchLinkwt = wt.waitForElement(By.xpath("//*[@id=\\\"3\\\"]/div/div/h3/a"),3);
-        searchLinkwt.click();
+        wt.waitForElement(By.xpath("//*[contains(text(),\"百度百科\")and contains(text(),\"test\")]"),3).click();
+
         //driver.findElement(By.xpath("//*[@id=\"3\"]/div/div/h3/a")).click();//未使用显示等待，页面元素未加载，无法找到元素
 /*
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(3));

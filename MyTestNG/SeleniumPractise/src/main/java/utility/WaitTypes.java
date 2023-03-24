@@ -19,7 +19,7 @@ public class WaitTypes {
         WebElement element = null;
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).click();
+            element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         }catch (Exception e){
             System.out.println("ÔªËØÈ±Ê§");
         }
